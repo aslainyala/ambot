@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="acadstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class ="nav">   
+      <a class="logo" href="#"><img src="logo.png" alt="Logo"></a>
+      <a href="acad.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a  href="blog.html">Blog</a>
+      <a  href="acad.html#signup" id="login">Log In</a>
+      
+    
+  </div>
+    <div class = "header">
+      <div class="htext">
+        <h6 class="haca">Academic</h6>
+        <h6 class="hser">Server</h6>
+        <button class ="blogb"><a href="acad.html#footer">Learn More</a></button>
+      </div>
+    </div>
+    <div class="logovid">
+        <video autoplay loop muted src="logovid.mp4"></video>
+    </div>   
+    <div class="tagline">
+        <h6 class="sline">Unleash Innovation, Empower Discovery:</h6>
+        <h6 class="pline">Academic Server at your Service!</h6>
+    </div>
+      <div class = "logoni">
+        <div class="logos1">
+          <video autoplay loop muted src="logos1.mp4"></video>
+          <video autoplay loop muted src="logos2.mp4"></video>
+          <video autoplay loop muted src="logos3.mp4"></video>
+          <video autoplay loop muted src="logos4.mp4"></video>
+          <video autoplay loop muted src="logos4.mp4"></video>
+        </div>
+      </div>
+    <div class="services">
+        <div class="service">
+          <h5>Services</h5>
+          <p>Our services include programming languages like HTML, JAVA, and more!  </p>
+          <form action="services.html">
+            <button type="submit" class="serviceb">Learn More</button>
+          </form>      </div>
+        </div>
+    <div class="blogs">
+        <div class="blog">
+          <h5>B L O G</h5>
+        <form action="blog.html">
+          <button type="submit" class="blogb">Learn More</button>
+        </form>
+        </div>
+        <div class="empty"></div>
+    </div>
+
+    <div id="signup">
+      <div class="sform">
+        <div class="signin">
+          <h5>Sign Up</h5>
+        </div>
+        <div class="inputs">
+          <input type="text" class="input" placeholder="Name" required>
+          <input type="text" class="input" placeholder="Email" required>
+          <input type="text" class="input" placeholder="Password" required>  
+        </div>
+        <button type="submit" class="submit" onclick='remove()'>Sign Up</button>
+      </div>
+      <div class="sinfo">
+        <h5 class="acad">Academic</h5>
+        <h5 class="server">Server</h5>
+        <p>Get involved and make a difference by logging in to our community!</p>
+      </div>
+    </div>
+
+    <div id = "footer">
+        <div class="about">
+          <h5>Acad Server</h5>
+          <p>Academic Server, founded in 2023 by two dedicated students from the University of Science and Technology of the Philippines (USTP), is a leading platform committed to revolutionizing the academic experience. Our visionary approach aims to bridge the gap between technology and education, providing students, educators, and researchers with a seamless and enriching learning environment. By fostering collaboration, innovation, and knowledge exchange, Academic Server empowers individuals to thrive in their academic pursuits. Join our vibrant community today and embark on a transformative journey of learning and discovery. </p>
+          </div>
+        <div class="menu">
+          <h5>Main Menu</h5>
+          <a href="acad.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="address">
+          <h5>Address</h5>
+          <p>Lawesbra, Lapasan, Cagayan de Oro City, <br>Philippines</p>
+          <p>Tulip8162@gmail.com</p>
+          <p>0905 815 4494</p>
+          <div class="logos">
+            <a href="https://www.fb.me/aurorahyhy08"><img src="ico-fb.png" alt=""></a>
+            <a href="ig"><img src="ico-ig.png" alt=""></a>
+            <a href="tw"><img src="ico-twitter.png" alt=""></a>
+          </div>
+        </div>
+    </div>
+    
+    <script>
+      function remove () 
+      {
+        var element = document.getElementById("signup");
+        element.remove();
+        var element2 = document.getElementById("login");
+        element2.remove();
+        document.documentElement.scrollTop = 0; 
+      }
+      
+
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.nav');
+        const scrolled = window.scrollY > 0;
+
+        if (scrolled) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+        });
+
+    </script>
+</body>
+</html>
